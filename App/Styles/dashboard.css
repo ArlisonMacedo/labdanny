@@ -1,0 +1,116 @@
+#dashboard-page{
+  height: 100vh;
+  width: 100vw;
+}
+
+#dashboard-page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  top: 2rem;
+  background: #fff;
+  height: 6.5rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+#dashboard-page header i{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#dashboard-page header p{
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+#dashboard-page header button {
+  border: 0.1rem solid #6805E6;
+  color: #6805E6;
+  border-radius: 0.2rem;
+  width: 4rem;
+  height: 2rem;
+  background: #fff;
+  cursor: pointer;  
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+#dashboard-page header button:hover{
+  background: #6805E6;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+
+
+#dashboard-page .content-dash{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: relative;
+  top: 6rem;
+}
+
+#dashboard-page .content-dash a {
+  text-decoration: none;
+  color: #000;
+}
+
+#dashboard-page .content-dash .card-dash{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  height: 10.8rem;
+  width: 37rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #ffffff;
+  background: var(--primary-body-color);
+  padding: 1.4rem;
+}
+#dashboard-page .content-dash .card-dash:hover{
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+  background: #2f0c5c;
+  color: #fff;
+}
+
+@media screen and (max-width: 1300px){
+  #dashboard-page .content-dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #dashboard-page .content-dash .card-dash {
+    margin: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 720px){
+  #dashboard-page .content-dash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #dashboard-page .content-dash .card-dash {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 461px){
+  #dashboard-page header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 413px){
+  #dashboard-page .content-dash .card-dash {
+    margin: 0.5rem;
+    width: 20rem;
+  }
+}

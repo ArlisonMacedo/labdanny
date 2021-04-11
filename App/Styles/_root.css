@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-body-color: #f0f0f2;
+  --primary-color: #020B26;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-body-color);
+  background-image: url('../../assets/crayon-frame-4273182_1280.png');
+  height: 100vh;
+  width: 100vw;
+}

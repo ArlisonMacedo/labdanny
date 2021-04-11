@@ -1,0 +1,90 @@
+#main{
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url('/assets/crayon-frame-4273182_1280.png'); */
+}
+
+#main .content{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#main .content .form{
+  position: relative;
+  padding: 1rem;
+  margin-top: 15rem;
+  background: #fff;
+  width: 47rem;
+  border-style: dotted;
+  border-radius: 0.8rem;
+  border-top-color: #6805E6;
+  border-bottom-color: #6805E6;
+  border-left-color: #6805E6;
+  border-right-color: #6805E6;
+}
+
+#main .content .form .form-content{
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem;
+}
+
+#main .content .form .form-content .label{
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+}
+
+#main .content .form .form-content .input {
+  border: 0;
+  height: 2.2rem;
+  padding-left: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  background: var(--primary-body-color);
+}
+
+#main .content .form .form-button {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #6805E6;
+  background: #fff;
+  color: #6805E6;
+  font-family: Poppins;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#main .content .form .form-button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+  background: #6805E6;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 762px){
+  #main .content .form {
+    margin-top: 13rem;
+    width: 37rem;
+  }
+}
+@media screen and (max-width: 591px){
+  #main .content .form {
+    width: 27rem;
+  }
+}
+@media screen and (max-width: 488px){
+  #main .content .form {
+    width: 22rem;
+  }
+  #main .content .form .form-content .label{
+    font-size: 1rem;
+  }
+  #main .content .form .form-content .input{
+    font-size: 0.8rem;
+  }
+}
