@@ -23,6 +23,11 @@ class Web
     echo $this->view->render('dashboard');
   }
 
+  public function presenseAbsences(): void 
+  {
+    echo $this->view->render('presenseAbsences');
+  }
+
   public function login(): void
   {
     if(isset($_POST['user']) && isset($_POST['passwd'])){
@@ -31,6 +36,14 @@ class Web
         echo true;
         header("Location: ". url('dashboard'));
       }
+    }
+  }
+
+  public function logout(): void
+  {
+    if(isset($_SESSION['ADMIN'])){
+      unset($_SESSION['ADMIN']);
+      header('Location: '. url());
     }
   }
 

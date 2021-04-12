@@ -13,7 +13,7 @@
     </a>
   </header>
   <div class='content-dash'>
-    <a href="#">
+    <a href="<?= url('presenca-faltas') ?>">
     <div class='card-dash'>
       <img src="https://cdn.pixabay.com/photo/2016/08/26/15/54/checklist-1622517_960_720.png" alt="" width="100" height="100">
       <h2>Presenças e Faltas</h2>

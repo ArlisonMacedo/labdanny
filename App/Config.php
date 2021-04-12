@@ -1,7 +1,7 @@
 <?php
 
-// define("BASE_URL", "http://localhost:8080/labdanny/");
-define("BASE_URL", "https://labdanny.herokuapp.com/");
+define("BASE_URL", "http://localhost:8080/labdanny/");
+// define("BASE_URL", "https://labdanny.herokuapp.com/");
 
 
 function url(string $uri = null){

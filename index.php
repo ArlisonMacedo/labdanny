@@ -13,9 +13,13 @@ $router->namespace('App\Controller');
 $router->group(null);
 $router->get('/', 'Web:home');
 $router->get('/dashboard', 'Web:dashboard');
+$router->get('/presenca-faltas', 'Web:presenseAbsences');
 
 $router->group('login');
 $router->post('/', 'Web:login');
+
+$router->group('logout');
+$router->get('/', 'Web:logout');
 
 
 $router->group('error');

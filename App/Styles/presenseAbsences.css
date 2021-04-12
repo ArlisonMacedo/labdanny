@@ -1,0 +1,144 @@
+#PA-main {
+  /* height: 100vh; */
+  width: 100vw;
+  height: 95vh;
+  transition: margin-left .5s;
+}
+
+#PA-main header{
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 1rem; */
+  /* margin-right: 1rem; */
+  padding: 0rem 1rem 0rem 1rem;
+  border-radius: 0.3rem;
+  /* border: 0.1rem solid #6805E6; */
+  height: 5rem;
+}
+
+#PA-main header i {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+#PA-main header p {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+#PA-main header a button{
+  border: 0.1rem solid #6805E6;
+  background-color: #ffffff;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: #6805E6;
+}
+
+#PA-main header a button:hover{
+  transform: scale(1.1);
+  transition: all 0.4s linear;
+  background-color: #6805E6;
+  color: #ffffff;
+  font-family: 'Poppins';
+}
+
+#PA-main .PA-tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #6805E6;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 9rem;
+  left: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+#PA-main .PA-tools:hover{
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+  box-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+#PA-main .PA-tools i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.sidebar{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 0.8rem 0.8rem 0.8rem 3.2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  transition: 0.7s;
+  font-family: 'Poppins';
+  background: #f5f5f5;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.sidebar a:hover{
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+
+.sidebar .closeSideBar{
+  position: absolute;
+  top: -0.5rem;
+  right: 2.5rem;
+  font-size: 1.6rem;
+  margin-left: 5rem;
+  color: var(--primary-color);
+  background: #ffffff;
+}
+
+.sidebar .closeSideBar:hover {
+  transform: scale(1.1);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 570px){
+  #PA-main .PA-tools {
+    width: 3rem;
+    height: 3rem;
+  }
+  #PA-main .PA-tools i{
+    font-size: 1.2rem;
+  }
+  .sidebar {padding-top: 5.5rem;}
+  .sidebar a{
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 523px){
+  #PA-main header p{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 311px){
+  #PA-main header p{
+    font-size: 1rem;
+  }
+}
