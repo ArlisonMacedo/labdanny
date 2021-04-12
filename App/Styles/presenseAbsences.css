@@ -1,8 +1,9 @@
 #PA-main {
   /* height: 100vh; */
   width: 100vw;
-  height: 95vh;
-  transition: margin-left .5s;
+  height: 100vh;
+  overflow: auto;
+  margin-top: 0;
 }
 
 #PA-main header{
@@ -10,26 +11,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-left: 1rem; */
-  /* margin-right: 1rem; */
+  margin-top: -2rem;
   padding: 0rem 1rem 0rem 1rem;
   border-radius: 0.3rem;
   /* border: 0.1rem solid #6805E6; */
-  height: 5rem;
+  height: 7rem;
 }
 
 #PA-main header i {
   font-size: 1.6rem;
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 #PA-main header p {
+  margin-top: 2rem;
   font-size: 2rem;
   color: var(--primary-color);
   font-family: 'Poppins', sans-serif;
 }
 
 #PA-main header a button{
+  margin-top: 2rem;
   border: 0.1rem solid #6805E6;
   background-color: #ffffff;
   width: 4rem;
@@ -47,17 +50,68 @@
   font-family: 'Poppins';
 }
 
+#PA-main .PA-content {
+  background: #ffffff;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+
+#costumers {
+  margin-top: 3rem;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+#costumers td, #costumers th {
+  border: 0.1rem solid #ddd;
+  padding: 0.8rem;
+}
+
+#costumers tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+#costumers tr:hover {
+  background: #d0c7dd;
+}
+#costumers th {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: left;
+  background: #7a15ff;
+  color: #ffffff;
+  font-family: 'Poppins';
+}
+#costumers tr {
+  color: var(--primary-color);
+}
+#costumers #day-pres {
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  font-family: 'Poppins', Helvetica;
+  /* display: flex; */
+  flex-direction: row;
+  overflow: auto;
+}
+
+
 #PA-main .PA-tools {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  background: #6805E6;
+  background: #7a15ff;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   cursor: pointer;
-  top: 9rem;
+  top: 7rem;
   left: 1rem;
   box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
 }
@@ -130,6 +184,10 @@
   .sidebar {padding-top: 5.5rem;}
   .sidebar a{
     font-size: 1rem;
+  }
+  #PA-main .PA-content {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 523px){

@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <?=$this->section('content')?>
+  <?=$this->section('content');?>
 </body>
 
 </html>

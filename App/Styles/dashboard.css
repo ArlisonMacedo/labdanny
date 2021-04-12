@@ -1,6 +1,7 @@
 #dashboard-page{
   height: 100vh;
   width: 100vw;
+  margin-top: 0rem;
 }
 
 #dashboard-page header {
@@ -8,24 +9,27 @@
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
-  top: 2rem;
+  top: -2rem;
   background: #fff;
-  height: 6.5rem;
+  height: 7rem;
   padding: 2rem 2rem 0 2rem;
 }
 
 #dashboard-page header i{
+  margin-top: 1.5rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 #dashboard-page header p{
+  margin-top: 1rem;
   font-size: 2rem;
   color: var(--primary-color);
   font-family: 'Poppins', sans-serif;
 }
 
 #dashboard-page header button {
+  margin-top: 1.5rem;
   border: 0.1rem solid #6805E6;
   color: #6805E6;
   border-radius: 0.2rem;
@@ -112,5 +116,17 @@
   #dashboard-page .content-dash .card-dash {
     margin: 0.5rem;
     width: 20rem;
+  }
+}
+
+@media screen and (max-width: 523px){
+  #dashboard-page header p{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 311px){
+  #dashboard-page header p{
+    font-size: 1rem;
+    margin-top: 3rem;
   }
 }
